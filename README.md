@@ -2,8 +2,12 @@
 
 
 # p-theory
+
+## Convergence
+
+### Almost sure Convergence 
 $$
 \begin{align*}
-    \mu(a\cap b) \leq \mu(a)\mu(b)
+    \mathbb{P}(\lim_{n\rightarrow \infty} X_n(\omega) = X(\omega)) = 1
 \end{align*}
 $$
