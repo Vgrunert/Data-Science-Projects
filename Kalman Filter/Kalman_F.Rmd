@@ -1,6 +1,8 @@
 ---
 title: "Introduction to Kalman-Filter"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 # Introduction
@@ -474,7 +476,7 @@ stochastic_volatility_process  <- function(state) { exp(state) }
 
 The following three figures present the results of the Kalman-Filter estimation of three different stochastic systems. A thourough statistical performance evaluation will be omitted at this point, and we are going to limit the evaluation to the visual inspection of the results. Figure 1 presents a constant model with gaussian noise, which changes its mean over time. Figure 2 represents sine measurements with gaussian noise, which is a non-linear stochastic process. Figure 3 depicts a random walk in two dimensions, where movement in either direction is dependent on the previous position plus gaussian noise.  
 
-```{r,fig.align='center'}
+```{r,fig.align='center',out.width = '40%'}
 # generate n constant measurements whose mean changes after n/2 measurements
 # random seed
 set.seed(0)
@@ -506,7 +508,7 @@ plot(time_var_const_mean, pch=19,
 lines(kf_const_time_var_mean[,1], col='red')
 ```
 
-```{r, fig.align='center'}
+```{r, fig.align='center',out.width = '40%'}
 # second k-f example using sine function with additive gaussian noise 
 set.seed(0)
 
@@ -525,7 +527,7 @@ plot(sine, pch=19,
 lines(kf_sine[,1], col='red')
 ```
 
-```{r, fig.align='center'}
+```{r, fig.align='center',out.width = '40%'}
 # generate two dimensional random walk, where the current position depends only on the previous one
 set.seed(0)
 
@@ -572,7 +574,7 @@ $$
 
 The following code generates the respective models.
 
-```{r, fig.align='center'}
+```{r, fig.align='center',out.width = '40%'}
 # recursive linear regression
 set.seed(0)
 # explantatory variables with intercept
@@ -828,7 +830,7 @@ $$
 
 Figure 6 presents the generated data in black and the result of the Extended-Kalman-Filter as the red line. As we can see, the Extended-Kalman-Filter captures the $x-y$ relationship for $x \leq 1$ quite well, and for $x > 1$ appears to consistently underestimate the measurements. Figure 7 shows that the state indeed levels out constantly below the true state. This divergence might be due to a misspecified model, which we know is not the case, or due to the fact that large x-values are unlikely to occur, and there is no evidence to support a proper estimation of these values. 
 
-```{r, fig.align='center'}
+```{r, fig.align='center',out.width = '40%'}
 ##################################################################################################################
 ############################# EXTENDED KALMAN FILTER SIMULATION  #################################################
 ##################################################################################################################
@@ -1021,7 +1023,7 @@ $$
 
 for which we obtained $0.56$ for the Laplace-, $0.56$ for the standard normal- and $0.55$ for the uniform distribution. Hence they are all close to the numeric solution, but the Laplace distribution is the closest. Thus we would choose the Laplace distribution as the importance distribution.
 
-```{r, fig.align='center'}
+```{r, fig.align='center',out.width = '40%'}
 ##################################################################################################################
 #############################     PARTICLE FILTER SIMULATION     #################################################
 ##################################################################################################################
@@ -1106,7 +1108,7 @@ $$
 \end{equation*}
 $$
 
-```{r, fig.align='center'}
+```{r, fig.align='center',out.width = '40%'}
 # particle filter simulatin example 1
 
 # init state
