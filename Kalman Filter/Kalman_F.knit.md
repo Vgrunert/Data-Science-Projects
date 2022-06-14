@@ -22,30 +22,35 @@ This presentation is structured as following: section 2 presents the key derivat
 # The state-space model
 
 $$ 
-    \begin{aligned}
-        \textbf{x}_t &\sim p(\textbf{x}_t|\textbf{x}_{t-1}) \\
-        \textbf{y}_t &\sim p(\textbf{y}_t|\textbf{x}_t)
-    \end{aligned}    
+\begin{align*}
+    \textbf{x}_t &\sim p(\textbf{x}_t|\textbf{x}_{t-1}) \\
+    \textbf{y}_t &\sim p(\textbf{y}_t|\textbf{x}_t)
+\end{align*}    
 $$    
 
 
 where the state $\textbf{x}_t$ is assumed to have the Markov property, meaning that no other dependencies than the ones specified above exist. The variable $\textbf{y}_t$ is the variable of interest, also referred to as the observation or measurement. For the purpose of conducting inference on the state using measurements, the quantity of interest is the posterior distribution if the current state, given all measurements $\textbf{y}_{1:t}$:
 
+$$
 \begin{equation*} 
     p(\textbf{x}_t|\textbf{y}_{1:t}) 
 \end{equation*}
+$$
 
 The process of calculating these quantities begins with the assumption that the previous value $p(\textbf{x}_{t-1}|\textbf{y}_{t-1})$ is known. Then using the fact that:
 
+$$
 \begin{equation*} 
     \begin{aligned}
         p(\textbf{x}_{t}, \textbf{x}_{t-1}|\textbf{y}_{1:t-1}) &= p(\textbf{x}_{t}|\textbf{y}_{1:t-1}, \textbf{x}_{t-1}) p(\textbf{x}_{t-1} |\textbf{y}_{1:t-1}) \\
                                                                &= p(\textbf{x}_{t}|\textbf{x}_{t-1}) p(\textbf{x}_{t-1} |\textbf{y}_{1:t-1})                               
     \end{aligned}
 \end{equation*}
+$$
 
 where $p(\textbf{x}_{t}|\textbf{y}_{1:t-1}, \textbf{x}_{t-1}) = p(\textbf{x}_{t}|\textbf{x}_{t-1})$ by assuming the Markov property holds. This equality decomposes the problem of calculating the probability of observing past and current state conditional on previous measurements into a part which is assumed to be known $p(\textbf{x}_{t-1} |\textbf{y}_{1:t-1})$ and one for which there is a model $p(\textbf{x}_{t}|\textbf{x}_{t-1})$. The next step is called prediction and consists of calculating:
 
+$$
 \begin{equation*} 
     \begin{aligned}
         p(\textbf{x}_{t}| \textbf{y}_{1:t-1}) &= \int p(\textbf{x}_{t}, \textbf{x}_{t-1}| \textbf{y}_{1:t-1}) \textbf{dx}_{t-1} \\
@@ -57,6 +62,7 @@ because $p(\textbf{x}_{t}, \textbf{x}_{t-1}|\textbf{y}_{1:t-1}) = p(\textbf{x}_{
 \begin{equation*}
     f_X(x) = \int f_{X,Y}(x,y) dy
 \end{equation*}
+$$
 
 With new measurements $\textbf{y}_t$ being observed, using the Bayes' theorem and the fact that $p(\textbf{y}_{1:t}) = p(\textbf{y}_t, \textbf{y}_{1:t-1})$ the quantity $p(\textbf{x}_t|\textbf{y}_{1:t})$ and can be reformulated as:
 

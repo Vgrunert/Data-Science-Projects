@@ -73,15 +73,15 @@ conclusion that summarizes the main ideas of this paper.
 # The state-space model
 
   
-![ &#10; \\begin{aligned}&#10; \\textbf{x}\_t &\\sim
+![ &#10;\\begin{align\*}&#10; \\textbf{x}\_t &\\sim
 p(\\textbf{x}\_t|\\textbf{x}\_{t-1}) \\\\&#10; \\textbf{y}\_t &\\sim
-p(\\textbf{y}\_t|\\textbf{x}\_t)&#10; \\end{aligned}
-&#10;](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%20%0A%20%20%20%20%5Cbegin%7Baligned%7D%0A%20%20%20%20%20%20%20%20%5Ctextbf%7Bx%7D_t%20%26%5Csim%20p%28%5Ctextbf%7Bx%7D_t%7C%5Ctextbf%7Bx%7D_%7Bt-1%7D%29%20%5C%5C%0A%20%20%20%20%20%20%20%20%5Ctextbf%7By%7D_t%20%26%5Csim%20p%28%5Ctextbf%7By%7D_t%7C%5Ctextbf%7Bx%7D_t%29%0A%20%20%20%20%5Cend%7Baligned%7D%20%20%20%20%0A
+p(\\textbf{y}\_t|\\textbf{x}\_t)&#10;\\end{align\*}
+&#10;](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%20%0A%5Cbegin%7Balign%2A%7D%0A%20%20%20%20%5Ctextbf%7Bx%7D_t%20%26%5Csim%20p%28%5Ctextbf%7Bx%7D_t%7C%5Ctextbf%7Bx%7D_%7Bt-1%7D%29%20%5C%5C%0A%20%20%20%20%5Ctextbf%7By%7D_t%20%26%5Csim%20p%28%5Ctextbf%7By%7D_t%7C%5Ctextbf%7Bx%7D_t%29%0A%5Cend%7Balign%2A%7D%20%20%20%20%0A
 " 
-    \\begin{aligned}
-        \\textbf{x}_t &\\sim p(\\textbf{x}_t|\\textbf{x}_{t-1}) \\\\
-        \\textbf{y}_t &\\sim p(\\textbf{y}_t|\\textbf{x}_t)
-    \\end{aligned}    
+\\begin{align*}
+    \\textbf{x}_t &\\sim p(\\textbf{x}_t|\\textbf{x}_{t-1}) \\\\
+    \\textbf{y}_t &\\sim p(\\textbf{y}_t|\\textbf{x}_t)
+\\end{align*}    
 ")  
 
 where the state
@@ -96,11 +96,37 @@ distribution if the current state, given all measurements
 ![\\textbf{y}\_{1:t}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7By%7D_%7B1%3At%7D
 "\\textbf{y}_{1:t}"):
 
+  
+![&#10;\\begin{equation\*} &#10; p(\\textbf{x}\_t|\\textbf{y}\_{1:t})
+&#10;\\end{equation\*}&#10;](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%0A%5Cbegin%7Bequation%2A%7D%20%0A%20%20%20%20p%28%5Ctextbf%7Bx%7D_t%7C%5Ctextbf%7By%7D_%7B1%3At%7D%29%20%0A%5Cend%7Bequation%2A%7D%0A
+"
+\\begin{equation*} 
+    p(\\textbf{x}_t|\\textbf{y}_{1:t}) 
+\\end{equation*}
+")  
+
 The process of calculating these quantities begins with the assumption
 that the previous value
 ![p(\\textbf{x}\_{t-1}|\\textbf{y}\_{t-1})](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;p%28%5Ctextbf%7Bx%7D_%7Bt-1%7D%7C%5Ctextbf%7By%7D_%7Bt-1%7D%29
 "p(\\textbf{x}_{t-1}|\\textbf{y}_{t-1})") is known. Then using the fact
 that:
+
+  
+![&#10;\\begin{equation\*} &#10; \\begin{aligned}&#10;
+p(\\textbf{x}\_{t}, \\textbf{x}\_{t-1}|\\textbf{y}\_{1:t-1}) &=
+p(\\textbf{x}\_{t}|\\textbf{y}\_{1:t-1}, \\textbf{x}\_{t-1})
+p(\\textbf{x}\_{t-1} |\\textbf{y}\_{1:t-1}) \\\\&#10; &=
+p(\\textbf{x}\_{t}|\\textbf{x}\_{t-1}) p(\\textbf{x}\_{t-1}
+|\\textbf{y}\_{1:t-1}) &#10;
+\\end{aligned}&#10;\\end{equation\*}&#10;](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%0A%5Cbegin%7Bequation%2A%7D%20%0A%20%20%20%20%5Cbegin%7Baligned%7D%0A%20%20%20%20%20%20%20%20p%28%5Ctextbf%7Bx%7D_%7Bt%7D%2C%20%5Ctextbf%7Bx%7D_%7Bt-1%7D%7C%5Ctextbf%7By%7D_%7B1%3At-1%7D%29%20%26%3D%20p%28%5Ctextbf%7Bx%7D_%7Bt%7D%7C%5Ctextbf%7By%7D_%7B1%3At-1%7D%2C%20%5Ctextbf%7Bx%7D_%7Bt-1%7D%29%20p%28%5Ctextbf%7Bx%7D_%7Bt-1%7D%20%7C%5Ctextbf%7By%7D_%7B1%3At-1%7D%29%20%5C%5C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%26%3D%20p%28%5Ctextbf%7Bx%7D_%7Bt%7D%7C%5Ctextbf%7Bx%7D_%7Bt-1%7D%29%20p%28%5Ctextbf%7Bx%7D_%7Bt-1%7D%20%7C%5Ctextbf%7By%7D_%7B1%3At-1%7D%29%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%5Cend%7Baligned%7D%0A%5Cend%7Bequation%2A%7D%0A
+"
+\\begin{equation*} 
+    \\begin{aligned}
+        p(\\textbf{x}_{t}, \\textbf{x}_{t-1}|\\textbf{y}_{1:t-1}) &= p(\\textbf{x}_{t}|\\textbf{y}_{1:t-1}, \\textbf{x}_{t-1}) p(\\textbf{x}_{t-1} |\\textbf{y}_{1:t-1}) \\\\
+                                                               &= p(\\textbf{x}_{t}|\\textbf{x}_{t-1}) p(\\textbf{x}_{t-1} |\\textbf{y}_{1:t-1})                               
+    \\end{aligned}
+\\end{equation*}
+")  
 
 where ![p(\\textbf{x}\_{t}|\\textbf{y}\_{1:t-1}, \\textbf{x}\_{t-1}) =
 p(\\textbf{x}\_{t}|\\textbf{x}\_{t-1})](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;p%28%5Ctextbf%7Bx%7D_%7Bt%7D%7C%5Ctextbf%7By%7D_%7B1%3At-1%7D%2C%20%5Ctextbf%7Bx%7D_%7Bt-1%7D%29%20%3D%20p%28%5Ctextbf%7Bx%7D_%7Bt%7D%7C%5Ctextbf%7Bx%7D_%7Bt-1%7D%29
@@ -116,6 +142,8 @@ a model
 "p(\\textbf{x}_{t}|\\textbf{x}_{t-1})"). The next step is called
 prediction and consists of calculating:
 
+$$ 
+
 because ![p(\\textbf{x}\_{t}, \\textbf{x}\_{t-1}|\\textbf{y}\_{1:t-1}) =
 p(\\textbf{x}\_{t}|\\textbf{x}\_{t-1}) p(\\textbf{x}\_{t-1}
 |\\textbf{y}\_{1:t-1})](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;p%28%5Ctextbf%7Bx%7D_%7Bt%7D%2C%20%5Ctextbf%7Bx%7D_%7Bt-1%7D%7C%5Ctextbf%7By%7D_%7B1%3At-1%7D%29%20%3D%20p%28%5Ctextbf%7Bx%7D_%7Bt%7D%7C%5Ctextbf%7Bx%7D_%7Bt-1%7D%29%20p%28%5Ctextbf%7Bx%7D_%7Bt-1%7D%20%7C%5Ctextbf%7By%7D_%7B1%3At-1%7D%29
@@ -124,7 +152,7 @@ p(\\textbf{x}\_{t}|\\textbf{x}\_{t-1}) p(\\textbf{x}\_{t-1}
 ![X,Y](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;X%2CY
 "X,Y") and for an arbitrary density function
 ![f\_{X,Y}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;f_%7BX%2CY%7D
-"f_{X,Y}"): 
+"f_{X,Y}"):  $$
 
 With new measurements
 ![\\textbf{y}\_t](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7By%7D_t
