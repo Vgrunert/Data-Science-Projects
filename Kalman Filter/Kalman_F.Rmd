@@ -1,8 +1,13 @@
 ---
 title: "Introduction to Kalman-Filter"
 output:
-  pdf_document: default
-  html_document: default
+  github_document:
+      toc: true
+      toc_depth: 2
+  header-includes:
+   - \usepackage{amsmath}
+   - \usepackage{amssymb}
+   - \usepackage{float}
 ---
 
 # Introduction
