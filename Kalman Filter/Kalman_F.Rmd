@@ -22,18 +22,20 @@ This presentation is structured as following: section 2 presents the key derivat
 # The state-space model
 
 $$ 
-    \begin{aligned}
-        \textbf{x}_t &\sim p(\textbf{x}_t|\textbf{x}_{t-1}) \\
-        \textbf{y}_t &\sim p(\textbf{y}_t|\textbf{x}_t)
-    \end{aligned}    
+\begin{align*}
+    \textbf{x}_t &\sim p(\textbf{x}_t|\textbf{x}_{t-1}) \\
+    \textbf{y}_t &\sim p(\textbf{y}_t|\textbf{x}_t)
+\end{align*}    
 $$    
 
 
 where the state $\textbf{x}_t$ is assumed to have the Markov property, meaning that no other dependencies than the ones specified above exist. The variable $\textbf{y}_t$ is the variable of interest, also referred to as the observation or measurement. For the purpose of conducting inference on the state using measurements, the quantity of interest is the posterior distribution if the current state, given all measurements $\textbf{y}_{1:t}$:
 
+$$
 \begin{equation*} 
     p(\textbf{x}_t|\textbf{y}_{1:t}) 
 \end{equation*}
+$$
 
 The process of calculating these quantities begins with the assumption that the previous value $p(\textbf{x}_{t-1}|\textbf{y}_{t-1})$ is known. Then using the fact that:
 
