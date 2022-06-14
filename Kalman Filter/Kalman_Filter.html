@@ -1,0 +1,13 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+# Introduction
+Bayesian filtering provides a framework to solve linear and non-linear stochastic systems. Due to their flexible nature, bayesian filtering methods are being implemented in various fields such as economics, robotics  and biology  amongst others. Using the baysian approach allows the estimation problem to be solved in a recursive manner. Consequently, a model is able to update it's parameters with each new observation. The ability to monitor the developement of the state of a system is a key advantage of bayesian filtering methods over other methods such as classical linear regression.
+
+Bayesian filtering refers to a broad class of methods. There are several different bayesian filtering methods which can broadly be devided into gaussian and non gaussian methods. A model is classified as gaussian, when any finite number of linear combinations of random variables follows a multivariate normal distribution. Here we considere two gaussian methods, the Kalman-Filter, the Extended-Kalman-Filter and the Particle-Filter, which is a non gaussian method. 
+
+Bayesian filters originate in optimal control theory. Thus historically the control theory notation has been used to describe Bayesian filtering models, which is divergent from other fields. The above mentioned models are generally referred to as state-space models. The state is set of unknown parameters of which the system depends, and the state-space is the set of all possible values the state can have. The model describes the relationship between unobserved states and observed measurements.
+
+This presentation is structured as following: section 2 presents the key derivations of the state-space model equations. Section three revisits matrix algebra followed and section four the properties of the multivariate gaussian distribution. The matrix algebra and the multivariate gaussian distribution are essential in deriving the Kalman-Filter equations, which are presented in section five. In section six the key equations and their derivations of the Extended-Kalman-Filter are presented. Finally, section seven presents an introduction to the Particel-Filter. The paper ends with a short conclusion that summarizes the main ideas of this paper.
