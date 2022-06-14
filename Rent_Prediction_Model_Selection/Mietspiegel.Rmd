@@ -6,8 +6,9 @@ header-includes:
    - \usepackage{amssymb}
    - \usepackage{float}
 output: 
-  pdf_document:
+github_document:
     toc: true
+    toc_depth: 2
 ---
 \pagebreak
 # Executive Summary
@@ -33,7 +34,7 @@ library(sandwich)
 library(rpart)
 library(rpart.plot)
 options(scipen = 1e+9)
-path <- "/home/vincent/Dropbox/University/Statistik/KURSE/CURRENT/master/stat_fallstudien/Beispiel_Mietspiegel.xlsx"
+path <- "./data.xlsx"
 
 miete <- read_xlsx(path, sheet = 2)
 names(miete) <- c(
@@ -396,7 +397,7 @@ ggplot(miete, aes(x = Alter_Gruppiert, y = Nettomiete)) + geom_boxplot() + labs(
 Im Folgenden wird fuer die restlichen Variablen die Nettomiete auf die entsprechenden Auspraegungen dargestellt. In allen Faellen kann man deutliche Unterschiede zwischen den Kategorien feststellen. 
 
 ```{r, echo = FALSE, fig.show="hold", out.width="33%", cache = TRUE, warning=FALSE, message = FALSE}
-ggplot(miete, aes(x = Wohnqualitaet, y = Nettomiete)) + geom_boxplot() + labs(title="Nettomiete / Wohnanlage", x ="", y = "Nettomiete")
+ggplot(miete, aes(x = Wohnanlage, y = Nettomiete)) + geom_boxplot() + labs(title="Nettomiete / Wohnanlage", x ="", y = "Nettomiete")
 
 # warmwasser
 ggplot(miete, aes(x = as.factor(Ohne_Warmwasservers), y = Nettomiete)) + geom_boxplot() + labs(title="Nettomiete / Ohne Warmwasserversorgung", x ="", y = "Nettomiete") + scale_x_discrete(labels = c("Nein", "Ja"))
