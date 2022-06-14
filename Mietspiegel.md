@@ -111,7 +111,7 @@ interpretieren und die “0” als “Nein”.
 
 ### Nettomietpreise
 
-<img src="Mietspiegel_files/figure-gfm/figures-side-1.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/figures-side-2.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/figures-side-3.png" width="33%" />
+<img src="Mietspiegel_files/figure-gfm/figures-side-1.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/figures-side-2.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/figures-side-3.jpeg" width="33%" />
 
 Grafik 1 (links) laesst eine symmetrische Verteilung der Nettomietpreise
 mit einigen Ausreissern nach oben (Schwarze Punkte) erkennen. Grafik 2
@@ -136,7 +136,7 @@ immer mehr zu. 48.2% der Wohnungen sind auf das Intervall von 55-85 qm
 konzentriert (in rot markierte Balken). Mehr wie die Haelfte (54%) der
 Wohnungen haben eine Flaeche von 71 qm oder weniger (Grafik 3, rechts).
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-3-1.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-3-2.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-3-3.png" width="33%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-3-1.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-3-2.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-3-3.jpeg" width="33%" />
 
 ### Zimmer
 
@@ -146,7 +146,7 @@ Anzahl der Wohnungen mit fuenf oder sechs Wohnungen macht 3.1 % der
 gesamten Wohnungen aus. 82.4% der Wohnungen haben drei oder weniger
 Zimmer (Grafik 2, rechts).
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-4-1.png" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-4-2.png" width="50%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-4-1.jpeg" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-4-2.jpeg" width="50%" />
 
 ### Alter
 
@@ -158,7 +158,7 @@ Nachkriegsjahren bis in die 80 Jahre hinein, wo sich der Wohnungsbau
 stabilisierte. 76.1% aller Wohnungen sind in der Zeit nach dem Zweiten
 Weltkrieg gebaut worden.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-5-1.png" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-5-2.png" width="50%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-5-1.jpeg" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-5-2.jpeg" width="50%" />
 
 ### Kategorische Variablen
 
@@ -167,7 +167,7 @@ Haeufigkeiten in den folgenden Grafiken dargestellt werden. Fuer alle
 folgenden Variablen lassen sich grosse Unterschiede in den Haeufigkeiten
 feststellen.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-1.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-2.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-3.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-4.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-5.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-6.png" width="33%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-1.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-2.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-3.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-4.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-5.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-6-6.jpeg" width="33%" />
 
 ## Bivariate Analysen
 
@@ -179,7 +179,7 @@ keiner anderen Variablen signifikant korreliert. 3) Wohnflaeche und
 Zimmeranzahl haben die staerkste- und Nettomiete und Wohnflaeche sind am
 zweitstaerkste positive Korrelation.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-7-1.png" width="45%" style="display: block; margin: auto;" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-7-2.png" width="45%" style="display: block; margin: auto;" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-7-1.jpeg" width="45%" style="display: block; margin: auto;" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-7-2.jpeg" width="45%" style="display: block; margin: auto;" />
 
 Im Folgenden wird der Zusammenhang zwischen der Nettomiete und
 selektierten Variablen dargestellt. Mit steigender Wohnflaeche,
@@ -189,13 +189,13 @@ Zwischen Alter und Nettomiete koennen wir einen nicht linearen
 Zusammenhang beobachten. Konkret steigt die Nettomiete zu den Juengsten
 (0 bis 20 Jahre) und den Aeltesten (80+).
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-8-1.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-8-2.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-8-3.png" width="33%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-8-1.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-8-2.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-8-3.jpeg" width="33%" />
 
 Im Folgenden wird fuer die restlichen Variablen die Nettomiete auf die
 entsprechenden Auspraegungen dargestellt. In allen Faellen kann man
 deutliche Unterschiede zwischen den Kategorien feststellen.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-1.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-2.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-3.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-4.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-5.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-6.png" width="33%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-1.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-2.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-3.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-4.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-5.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-9-6.jpeg" width="33%" />
 
 ## Trivariate Analysen
 
@@ -226,7 +226,7 @@ Resultate wieder. Wir beobachten, dass die Nettiete bei Wohnflaeche und:
 
 sich deutlich von anderen unterscheidet.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-1.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-2.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-3.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-4.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-5.png" width="33%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-1.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-2.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-3.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-4.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-10-5.jpeg" width="33%" />
 
 ### Alter +
 
@@ -240,7 +240,7 @@ Wohnungen ohne gehobener Kueche der Nettomietpreis ueber die
 Alterskategorieen konstant verlaeuft. Hier wirkt sich also das Alter
 weniger stark auf den Mietpreis aus.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-11-1.png" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-11-2.png" width="50%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-11-1.jpeg" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-11-2.jpeg" width="50%" />
 
 ### Wohnanlage
 
@@ -249,7 +249,7 @@ Badausstattung wieder. Wie koennen erkennen, dass vor allem in der
 besten Wohnanlage ein deutlich hoeherer Mietepreis fuer Wohnungen mit
 Extra Badausstattung vorhanden ist wie fuer andere.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-12-1.png" width="50%" style="display: block; margin: auto;" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-12-1.jpeg" width="50%" style="display: block; margin: auto;" />
 
 # Modellselektion
 
@@ -264,7 +264,7 @@ Variablenselektion verwendet werden, da sie eine Hierarchie der
 wichtigsten Variablen erzeugen. Folgende Grafik gibt den
 Entscheidungsbaum fuer diesen Datensatz wieder.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-13-1.jpeg" style="display: block; margin: auto;" />
 
 Die Grafik ist wie folgt zu verstehen: Auf oberster Ebene wird der
 Mittelwert der Nettomiete 575 wiedergegeben. Dieser Enthaelt alle, d.h.
@@ -432,7 +432,7 @@ konstant um eine Gerade ohne erkennbares Muster gestreut, gehen wir von
 konstanten Varianzen aus. In der linken Grafik sind die Ergebnisse fuer
 das normale Modell in der rechten fuer das gewichtete.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-19-1.png" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-19-2.png" width="50%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-19-1.jpeg" width="50%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-19-2.jpeg" width="50%" />
 
 Wir erkennen keinen markanten Unterschied. Vergleichen wir die
 Durchschnitte der quadrierten Residuen aus dem normalen Modell 22810 und
@@ -451,7 +451,7 @@ staerksten wirken sich die Ausreisser auf die Variablen “Ohne
 Warmwasserversorgung” und “Beste Wohnanlage” aus. Dennoch gibt es keine
 offensichtliche Rechtfertigung, um die Ausreisser zu entfernen.
 
-<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-20-1.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-20-2.png" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-20-3.png" width="33%" />
+<img src="Mietspiegel_files/figure-gfm/unnamed-chunk-20-1.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-20-2.jpeg" width="33%" /><img src="Mietspiegel_files/figure-gfm/unnamed-chunk-20-3.jpeg" width="33%" />
 
 # Conclusio
 
