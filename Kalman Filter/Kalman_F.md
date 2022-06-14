@@ -72,6 +72,18 @@ conclusion that summarizes the main ideas of this paper.
 
 # The state-space model
 
+  
+![ &#10; \\begin{aligned}&#10; \\textbf{x}\_t &\\sim
+p(\\textbf{x}\_t|\\textbf{x}\_{t-1}) \\\\&#10; \\textbf{y}\_t &\\sim
+p(\\textbf{y}\_t|\\textbf{x}\_t)&#10; \\end{aligned}
+&#10;](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%20%0A%20%20%20%20%5Cbegin%7Baligned%7D%0A%20%20%20%20%20%20%20%20%5Ctextbf%7Bx%7D_t%20%26%5Csim%20p%28%5Ctextbf%7Bx%7D_t%7C%5Ctextbf%7Bx%7D_%7Bt-1%7D%29%20%5C%5C%0A%20%20%20%20%20%20%20%20%5Ctextbf%7By%7D_t%20%26%5Csim%20p%28%5Ctextbf%7By%7D_t%7C%5Ctextbf%7Bx%7D_t%29%0A%20%20%20%20%5Cend%7Baligned%7D%20%20%20%20%0A
+" 
+    \\begin{aligned}
+        \\textbf{x}_t &\\sim p(\\textbf{x}_t|\\textbf{x}_{t-1}) \\\\
+        \\textbf{y}_t &\\sim p(\\textbf{y}_t|\\textbf{x}_t)
+    \\end{aligned}    
+")  
+
 where the state
 ![\\textbf{x}\_t](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextbf%7Bx%7D_t
 "\\textbf{x}_t") is assumed to have the Markov property, meaning that no
