@@ -10,5 +10,5 @@ The document analyzes a network of corporations, based on Twitter's publicly ava
 This document provides an overview of Kalman-Filter, Extended-Kalman-Filter and Particle-Filter. These are prominent examples of a class of estimators called bayesian filters. This paper uses the properties of the multivariate gaussian distribition to derive key results for the Kalman-Filter,
 and provides examples of applications of state-space models.
 
-## Rent Prediction
+## Rent Prediction / German
 The aim of this work is to obtain a model for estimating the net rental price. For this purpose a extensive data control and analysis carried out. Using the best subset method, the best data based linear model was estimated. Add interaction terms failed to lead to significant model improvements. The model has the following problems: On the one hand, there are inhomogeneous variances. For this model led attempting to fix this problem but with worse results. On the other hand, data contains outliers. Due to a lack of objective justification, the outliers will remain in the model. For these reasons, a linear model with all provided variables is used to estimate the net rental price.
